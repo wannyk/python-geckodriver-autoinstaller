@@ -13,6 +13,8 @@ import zipfile
 
 from io import BytesIO
 
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 __author__ = 'Yeongbin Jo <yeongbin.jo@pylab.co>'
 
